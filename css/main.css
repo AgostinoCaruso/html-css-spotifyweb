@@ -1,3 +1,7 @@
+body{
+    color: var(--color-light);
+
+}
 /* --------------------------------------------------------------------------------main-container */
 .main-container{
     height: 100vh;
@@ -10,8 +14,10 @@
 /* --------------------------------------------------------------------------------sidebar */
 .side-bar{
     flex: 0 0 230px;
+    background-color: var(--color-black);
 }
 /* --------------------------------------------------------------------------------main */
 main{
     flex: 1 1 auto;
+    background-color: var(--color-dark);
 }

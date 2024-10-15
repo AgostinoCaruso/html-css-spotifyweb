@@ -1,3 +1,69 @@
-footer{
-    flex:0 0 100px;
+footer {
+    flex: 0 0 100px;
+    background-color: var(--color-darkgrey);
+    padding: var(--lit-space);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------------------------------------------------------------left-footer */
+footer .left-footer {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+footer .small-img {
+    padding-right: var(--lit-space);
+}
+
+footer .small-text {
+    padding-left: var(--lit-space);
+}
+
+footer .small-img img {
+    width: var(--huge-space);
+}
+
+footer .icon {
+    padding-left: var(--med-space);
+}
+
+footer .icon>.fa-regular {
+    padding: var(--xs-space);
+}
+
+/* ---------------------------------------------------------------mid-footer */
+footer .mid-footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+footer .mid-footer-up>i {
+    padding: var(--xs-space);
+}
+
+footer .mid-footer-bot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .mid-footer-bot .bar-audio {
+    padding: var(--xs-space);
+}
+/* --------------------------------------------------------------right-footer */
+footer .right-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .right-footer i{
+    padding: var(--xs-space);
+}
+footer .right-footer .hr{
+    width: 100px;
 }

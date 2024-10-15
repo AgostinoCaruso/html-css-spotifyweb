@@ -12,17 +12,50 @@
     --color-lightgrey: #c1c1c1;
     --color-highlight: #9ae22d;
     --color-redcolor: #ca1717;
+    /* space */
+    --xs-space: 5px;
+    --lit-space: 10px;
+    --med-space: 20px;
+    --huge-space: 50px;
 }
-.debugger{
+
+.debugger {
     border: 1px solid red;
 }
+
 img {
     width: 100%;
 }
+
+.hr {
+    border: none;
+    height: 2px;
+    width: 300px;
+    background-color: var(--color-lightgrey);
+}
+
 /* --------------------------------------------------------------------------------flex-utility */
-.d-flex{
+.d-flex {
     display: flex;
 }
-.flex-col{
+
+.flex-col {
     flex-flow: column nowrap;
+}
+
+.sp-bet {
+    justify-content: space-between;
+}
+
+.al-ite-cen {
+    align-items: center;
+}
+
+/* other */
+.d-block {
+    display: block;
+}
+
+.t-align {
+    text-align: center;
 }
