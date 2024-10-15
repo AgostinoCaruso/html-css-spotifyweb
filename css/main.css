@@ -63,6 +63,10 @@ main{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 15px;
+}
+.header-fix > .boh{
+    padding-right: 15px;
 }
 .header-fix .btn{
     text-transform: uppercase;
@@ -84,25 +88,51 @@ main{
     text-transform: uppercase;
     font-size: .75em;
     color: var(--color-lightgrey);
+    position: relative;
 }
 .nav-header ul li:hover{
     color: var(--color-light);
-    border-bottom: 1px solid green;
 }
-/* main .nav-header ul li hr{
-    width: 20px;
-} */
+.nav-header ul li:hover:after{
+    content: '';
+    background-color: green;
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 /* section-played */
 .played{
     padding-top: var(--high-space);
 }
-
-/* TODO not padding first and last */
-/* .played .col-card:not(:nth-child(0)),
-.played .col-card:not(:last-child){
-    padding: var(--lit-space);
-} */
+.played .col-card .img{
+    position: relative;
+}
+.played .col-card .img:hover:before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    pointer-events: none;
+}
+.played .col-card .img:hover:after{
+    content: "\f144";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 200;
+    position: absolute;
+    top:50%;
+    left:50%;    
+    transform: translate(-50% ,-50%);
+    font-size: 48px;
+    color: white;
+    pointer-events: none;
+}
 .col-card .text{
     padding: var(--lit-space);
     display: flex;

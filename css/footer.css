@@ -30,6 +30,7 @@ footer .small-text .text-sub{
     color: var(--color-lightgrey);
 }
 footer .small-text .text-sub:hover{
+    color: var(--color-light);
     text-decoration: underline;
 }
 footer .small-img img {
