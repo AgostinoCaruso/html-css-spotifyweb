@@ -1,6 +1,32 @@
 body{
     color: var(--color-light);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* ---------------------------------------------------------------general */
+.col-card{
+    padding-top: var(--med-space);
+    /* padding: 0px var(--lit-space); */
+    width: calc(100% / 6);
+}
+.col-card .text-main{
+    font-weight: 600;
+}
+.col-card .text-sub{
+    font-size: .9em;
+    color: var(--color-lightgrey);
+}
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--med-space);
+    padding-top: var(--med-space);
+    padding-right: var(--lit-space);
+}
 
+h4{
+    padding-top: var(--lit-space);
+    color: var(--color-lightgrey);
+    font-size: .85em;
 }
 /* --------------------------------------------------------------------------------main-container */
 .main-container{
@@ -60,18 +86,7 @@ main{
 main .nav-header ul li hr{
     width: 20px;
 }
-/* general */
-.col-card{
-    padding-top: var(--med-space);
-    padding: 0px var(--lit-space);
-    width: calc(100% / 6);
-}
-.container{
-    display: flex;
-    flex-flow: row nowrap;
-    padding-top: var(--med-space);
-    padding-right: var(--lit-space);
-}
+
 /* section-played */
 .played{
     padding-top: var(--high-space);
@@ -91,7 +106,16 @@ main .nav-header ul li hr{
 .col-card .text span{
     padding: var(--xs-space);
 }
-/* section-created */
+/*--------------------------------------------------------------- section-created */
 .created{
     padding-top: var(--high-space);
+}
+
+/* ---------------------------------------------------------------section-artists */
+.artists{
+    padding-top: var(--high-space);
+}
+.artists .container .img{
+    border-radius: 50%;
+    overflow: hidden;
 }

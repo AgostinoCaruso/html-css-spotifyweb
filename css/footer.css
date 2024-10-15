@@ -31,7 +31,7 @@ footer .icon {
     padding-left: var(--med-space);
 }
 
-footer .icon>.fa-regular {
+footer .icon a {
     padding: var(--xs-space);
 }
 
@@ -42,7 +42,7 @@ footer .mid-footer {
     align-items: center;
 }
 
-footer .mid-footer-up i {
+footer .mid-footer-up a {
     padding: var(--xs-space);
 }
 
