@@ -19,3 +19,10 @@
 img {
     width: 100%;
 }
+/* --------------------------------------------------------------------------------flex-utility */
+.d-flex{
+    display: flex;
+}
+.flex-col{
+    flex-flow: column nowrap;
+}
