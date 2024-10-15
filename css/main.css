@@ -21,3 +21,21 @@ main{
     flex: 1 1 auto;
     background-color: var(--color-dark);
 }
+/* header-fix */
+.header-fix{
+    position:fixed;
+    top:0;
+    left: 230px;
+    height: 75px;
+    width: calc(100% - 250px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-fix .btn{
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .5px;
+    padding: var(--lit-space) var(--high-space);
+}

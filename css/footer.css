@@ -42,7 +42,7 @@ footer .mid-footer {
     align-items: center;
 }
 
-footer .mid-footer-up>i {
+footer .mid-footer-up i {
     padding: var(--xs-space);
 }
 
