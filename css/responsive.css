@@ -2,13 +2,60 @@
 
 }
 @media screen and (max-width:768px){
-    .side-bar{
-        flex:0 0 10px;
+    /* main */
+    h2{
+        font-size: 1.2em;
+    }
+    .container{
+        flex-flow: row wrap;
+        gap: var(--xs-space);
+        padding-top: var(--xs-space);
+    }
+    .col-card{
+        width: calc((100% - 20px ) / 4);
+    }
+    .col-card .text{
+        font-size: .7em;
+    }
+    .played, .created , .artists{
+        padding-top: var(--lit-space);
+    }
+    /* footer */
+    footer .mid-footer-bot .bar-audio {
+        font-size: .6em;
+    }    
+    footer .left-footer .small-text .text-sub{
+        font-size: .8em;
     }
 }
 @media screen and (max-width:568px){
+    /* main */
+    .nav-header ul li{
+        font-size: .6em;
+    }
+    .col-card{
+        width: calc((100% - 20px ) / 2);
+    }
+    /* footer */
+    footer .left-footer .small-text{
+        font-size: .8em;
+    }
+   
+    footer .mid-footer-bot .hr{
+        width: 150px;
+    }
 
 }
 @media screen and (max-width:480px){
-
+    .side-bar{
+        flex:0 0 20px;
+    }
+    .header-fix{
+        left: 52px;
+        width: calc(100% - 70px);
+    }
+    /* footer */
+    footer .right-footer .hr{
+        display: none;
+    }
 }

@@ -11,7 +11,6 @@ footer {
 /* ---------------------------------------------------------------left-footer */
 footer .left-footer {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -22,7 +21,9 @@ footer .small-img {
 footer .small-text {
     padding-left: var(--lit-space);
 }
-
+footer .small-text .text-sub{
+    color: var(--color-lightgrey);
+}
 footer .small-img img {
     width: var(--huge-space);
 }

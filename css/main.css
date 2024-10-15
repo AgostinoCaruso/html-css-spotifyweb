@@ -9,6 +9,7 @@ body{
     width: calc(100% / 6);
 }
 .col-card .text-main{
+    font-size: .9em;
     font-weight: 600;
 }
 .col-card .text-sub{
@@ -74,6 +75,7 @@ main{
 }
 .nav-header ul{
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
 }
 .nav-header ul li{
