@@ -10,6 +10,7 @@ body{
 .main-side-content{
     flex:1 1 auto;
     width: 100%;
+    min-height: 0;
 }
 /* --------------------------------------------------------------------------------sidebar */
 .side-bar{
@@ -21,6 +22,7 @@ main{
     flex: 1 1 auto;
     background-color: var(--color-dark);
     padding: var(--med-space);
+    overflow-y:auto;
 }
 /* header-fix */
 .header-fix{
@@ -53,4 +55,43 @@ main{
     text-transform: uppercase;
     font-size: .75em;
     color: var(--color-lightgrey);
+    border-bottom: 1px solid green;
+}
+main .nav-header ul li hr{
+    width: 20px;
+}
+/* general */
+.col-card{
+    padding-top: var(--med-space);
+    padding: 0px var(--lit-space);
+    width: calc(100% / 6);
+}
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: var(--med-space);
+    padding-right: var(--lit-space);
+}
+/* section-played */
+.played{
+    padding-top: var(--high-space);
+}
+
+/* TODO not padding first and last */
+/* .played .col-card:not(:nth-child(0)),
+.played .col-card:not(:last-child){
+    padding: var(--lit-space);
+} */
+.col-card .text{
+    padding: var(--lit-space);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.col-card .text span{
+    padding: var(--xs-space);
+}
+/* section-created */
+.created{
+    padding-top: var(--high-space);
 }
