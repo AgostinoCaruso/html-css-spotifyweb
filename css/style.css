@@ -1,5 +1,50 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #141922;
+    --color-darkgrey: #282828;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-lightgrey: #c1c1c1;
+    --color-highlight: #9ae22d;
+    --color-redcolor: #ca1717;
+}
+.debugger{
+    border: 1px solid red;
+}
+img {
+    width: 100%;
+}
+
+/* --------------------------------------------------------------------------------flex-utility */
+.d-flex{
+    display: flex;
+}
+.flex-col{
+    flex-flow: column nowrap;
+}
+/* --------------------------------------------------------------------------------main-container */
+.main-container{
+    height: 100vh;
+}
+/* --------------------------------------------------------------------------------main-side-content */
+.main-side-content{
+    flex:1 1 auto;
+    width: 100%;
+}
+/* --------------------------------------------------------------------------------sidebar */
+.side-bar{
+    flex: 0 0 230px;
+}
+/* --------------------------------------------------------------------------------main */
+main{
+    flex: 1 1 auto;
+}
+/* --------------------------------------------------------------------------------footer */
+footer{
+    flex:0 0 100px;
 }
