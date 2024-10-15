@@ -30,6 +30,7 @@ footer .small-img img {
 
 footer .icon {
     padding-left: var(--med-space);
+    display: flex;
 }
 
 footer .icon a {
