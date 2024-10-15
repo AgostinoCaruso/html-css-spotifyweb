@@ -20,6 +20,7 @@ body{
 main{
     flex: 1 1 auto;
     background-color: var(--color-dark);
+    padding: var(--med-space);
 }
 /* header-fix */
 .header-fix{
@@ -38,4 +39,18 @@ main{
     font-size: .8em;
     letter-spacing: .5px;
     padding: var(--lit-space) var(--high-space);
+}
+/* nav-header */
+.nav-header{
+    padding-top:70px;
+}
+.nav-header ul{
+    display: flex;
+    justify-content: center;
+}
+.nav-header ul li{
+    padding: var(--lit-space);
+    text-transform: uppercase;
+    font-size: .75em;
+    color: var(--color-lightgrey);
 }

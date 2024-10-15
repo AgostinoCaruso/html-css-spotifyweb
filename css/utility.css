@@ -16,7 +16,7 @@
     --xs-space: 5px;
     --lit-space: 10px;
     --med-space: 20px;
-    --high-space:30px;
+    --high-space: 30px;
     --huge-space: 50px;
 }
 
@@ -26,6 +26,15 @@
 
 img {
     width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+ul {
+    list-style: none;
 }
 
 /* --------------------------------------------------------------------------------flex-utility */
@@ -53,6 +62,7 @@ img {
 .t-align {
     text-align: center;
 }
+
 /* custom-class */
 .hr {
     border: none;
@@ -60,8 +70,9 @@ img {
     width: 300px;
     background-color: var(--color-lightgrey);
 }
-.btn{
-    border:1px solid var(--color-light);
+
+.btn {
+    border: 1px solid var(--color-light);
     padding: var(--lit-space) var(--med-space);
     border-radius: 30px;
 }
