@@ -1,11 +1,32 @@
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1400px) {
+    h2{
+        font-size: 2em;
+    }
+    .nav-header ul li{
+        font-size: 1em;
+    }
+    .col-card .text {
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width:1200px) {
+    h2{
+        font-size: 1.2em;
+    }
+    .nav-header ul li{
+        font-size: .75em;
+    }
+    .col-card .text {
+        font-size: 1em;
+    }
+}
 
 @media screen and (max-width:768px) {
 
     /* main */
-    h2 {
+    /* h2 {
         font-size: 1.2em;
-    }
+    } */
 
     .container {
         flex-flow: row wrap;

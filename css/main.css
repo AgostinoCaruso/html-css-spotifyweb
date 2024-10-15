@@ -29,6 +29,7 @@ h4{
     color: var(--color-lightgrey);
     font-size: .85em;
 }
+
 /* --------------------------------------------------------------------------------main-container */
 .main-container{
     height: 100vh;
@@ -83,11 +84,14 @@ main{
     text-transform: uppercase;
     font-size: .75em;
     color: var(--color-lightgrey);
+}
+.nav-header ul li:hover{
+    color: var(--color-light);
     border-bottom: 1px solid green;
 }
-main .nav-header ul li hr{
+/* main .nav-header ul li hr{
     width: 20px;
-}
+} */
 
 /* section-played */
 .played{

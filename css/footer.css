@@ -7,7 +7,12 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-
+footer a{
+    color: var(--color-lightgrey);
+}
+footer a:hover{
+    color: var(--color-light);
+}
 /* ---------------------------------------------------------------left-footer */
 footer .left-footer {
     display: flex;
@@ -23,6 +28,9 @@ footer .small-text {
 }
 footer .small-text .text-sub{
     color: var(--color-lightgrey);
+}
+footer .small-text .text-sub:hover{
+    text-decoration: underline;
 }
 footer .small-img img {
     width: var(--huge-space);
