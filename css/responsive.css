@@ -99,17 +99,48 @@
     .nav-header ul li {
         font-size: .9em;
     }
-    .side-bar {
-        flex: 0 0 20px;
-    }
     .col-card .text {
         font-size: 1.5em;
     }
     .header-fix {
-        left: 20px;
-        width: calc(100% - 20px);
+        left: 30px;
+        width: calc(100% - 30px);
     }
-
+    
+    /* side-bar */
+    .side-bar {
+        flex: 0 0 30px;
+        align-items: center;
+    }
+    .side-bar-top{
+        padding: var(--lit-space) 0px;
+        padding: 0px;
+    }
+    .side-bar-top .small-img img{        
+        display: none;
+    }
+    .side-bar .playlist-side-bar{
+        display: none;
+    }
+    .side-bar-top .img-hide{
+        display: block;
+    }
+    .side-bar .img-sidebar .small-text{
+        display: none;
+    }
+    .side-bar-top .img-sidebar:hover :before {
+        position: absolute;
+        content: '';
+        background-color: var(--color-highlight);
+        top: 50%;
+        left: -45%;
+        width: 20px;
+        height: 1px;
+        transform: rotate(90deg);
+    }
+    .side-bar-bot{
+        display: none;
+    }
     /* footer */
     footer{
         justify-content: space-around;
