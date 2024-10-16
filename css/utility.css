@@ -20,13 +20,13 @@
     --huge-space: 50px;
 }
 
-/* .debugger {
+.debugger {
     border: 1px solid red;
-} */
+}
 
 img {
     width: 100%;
-    display: block;
+    display: block;    
 }
 
 a {

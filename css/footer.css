@@ -6,6 +6,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10000;
 }
 footer a{
     color: var(--color-lightgrey);
@@ -53,6 +54,9 @@ footer .mid-footer {
     align-items: center;
 }
 
+footer .mid-footer-up a:nth-child(3){
+    transform: scale(2);
+}
 footer .mid-footer-up a {
     padding: var(--xs-space);
 }

@@ -5,9 +5,9 @@ body{
 /* ---------------------------------------------------------------general */
 .col-card{
     padding-top: var(--med-space);
-    /* padding: 0px var(--lit-space); */
     width: calc(100% / 6);
 }
+
 .col-card .text-main{
     font-size: .9em;
     font-weight: 600;
@@ -43,7 +43,35 @@ h4{
 /* --------------------------------------------------------------------------------sidebar */
 .side-bar{
     flex: 0 0 230px;
+    display: flex;
+    flex-flow: column nowrap;
     background-color: var(--color-black);
+    min-height: 400px;
+    overflow: hidden;
+    padding: var(--high-space) var(--med-space) var(--lit-space) var(--med-space);
+}
+.side-bar-top{
+    flex: 1 1 auto;
+}
+.side-bar-top img{
+    width: 130px;
+    padding-bottom: var(--med-space);
+    padding: 0;
+}
+.side-bar-top .img-sidebar{
+    padding: var(--xs-space) 0px;
+    display: flex;
+    align-items: center;
+    gap: var(--lit-space);
+}
+.side-bar-top .small-text{
+    text-align: center;
+}
+.side-bar-top .img-sidebar img{
+    width: 25px;
+}
+.side-bar-bot{
+    flex: 0 0 100px;
 }
 /* --------------------------------------------------------------------------------main */
 main{
@@ -54,11 +82,12 @@ main{
 }
 /* header-fix */
 .header-fix{
+    z-index: 3000;
     position:fixed;
     top:0;
     left: 230px;
     height: 75px;
-    width: calc(100% - 250px);
+    width: calc(100% - 230px);
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: flex-end;
@@ -95,9 +124,9 @@ main{
 }
 .nav-header ul li:hover:after{
     content: '';
-    background-color: green;
+    background-color: var(--color-highlight);
     height: 2px;
-    width: 40px;
+    width: calc(100% - 30px);
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -154,4 +183,5 @@ main{
 .artists .container .img{
     border-radius: 50%;
     overflow: hidden;
+    
 }
