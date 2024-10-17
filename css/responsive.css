@@ -89,58 +89,88 @@
         font-size: .8em;
     }
 
-    footer .mid-footer-bot .hr {
-        width: 150px;
+    footer .right-footer .range-bar {
+        display: none;
     }
 
 }
 
 @media screen and (max-width:480px) {
+    .container{
+        padding-right: 0px;
+    }
     .nav-header ul li {
         font-size: .9em;
+    }    
+    .col-card {
+        width: calc(100% / 1);
+    }
+    .col-card{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .col-card img:hover{
+        transform: scale(1);
     }
     .col-card .text {
         font-size: 1.5em;
     }
     .header-fix {
-        left: 30px;
-        width: calc(100% - 30px);
+        left: 50px;
+        width: calc(100% - 50px);
     }
     
     /* side-bar */
     .side-bar {
-        flex: 0 0 30px;
+        flex: 0 0 50px;
         align-items: center;
     }
-    .side-bar-top{
-        padding: var(--lit-space) 0px;
-        padding: 0px;
-    }
-    .side-bar-top .small-img img{        
+    .side-bar-top .img-show{        
         display: none;
     }
     .side-bar .playlist-side-bar{
         display: none;
     }
     .side-bar-top .img-hide{
+        padding-top: var(--xs-space);
         display: block;
     }
     .side-bar .img-sidebar .small-text{
         display: none;
     }
+   
     .side-bar-top .img-sidebar:hover :before {
         position: absolute;
         content: '';
         background-color: var(--color-highlight);
         top: 50%;
-        left: -45%;
+        left: -85%;
         width: 20px;
         height: 1px;
-        transform: rotate(90deg);
+        transform: rotate(270deg);
     }
     .side-bar-bot{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: var(--med-space);
+        padding-top: var(--med-space);
+    }
+    .side-bar-bot a i{
+        font-size: .7em;
+    }
+    .side-bar-bot .no-mobile{
         display: none;
     }
+    .side-bar-bot a i, 
+    .side-bar-bot .user img{
+        transition: transform .5s;
+    }
+    .side-bar-bot a i:hover,
+    .side-bar-bot .user img:hover{
+        transform: scale(1.4);
+    }
+   
     /* footer */
     footer{
         justify-content: space-around;
@@ -152,7 +182,5 @@
     footer .right-footer .hr {
         display: none;
     }
-    .col-card {
-        width: calc((100% - 20px) / 1);
-    }
+
 }
