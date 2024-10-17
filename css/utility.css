@@ -23,7 +23,15 @@
 /* .debugger {
     border: 1px solid red;
 } */
+/* body{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+} */
+body, html{
+    /* height: -webkit-fill-available; */
+    height: 100%;
 
+}
 img {
     width: 100%;
     display: block;    
