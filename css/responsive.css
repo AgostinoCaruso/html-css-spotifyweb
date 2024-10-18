@@ -8,6 +8,11 @@
     .col-card .text {
         font-size: 1.3em;
     }
+     
+    .side-bar-top{
+        font-size: 1.2em;
+
+    }
 }
 @media screen and (max-width:1200px) {
     h2{
@@ -41,7 +46,11 @@
     .artists {
         padding-top: var(--lit-space);
     }
+ 
+    .side-bar-top{
+        font-size: 1em;
 
+    }
     /* footer */
     footer .mid-footer-bot .bar-audio {
         font-size: .6em;
@@ -138,7 +147,7 @@
     .side-bar .img-sidebar .small-text{
         display: none;
     }
-   
+  
     .side-bar-top .img-sidebar:hover :before {
         position: absolute;
         content: '';
